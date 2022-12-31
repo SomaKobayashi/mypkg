@@ -1,5 +1,5 @@
 # mypkgパッケージ
-![test](https;//github.com/SomaKobayashi/mypkg/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/SomaKobayashi/mypkg/actions/workflows/test.yml/badge.svg)
 
 このリポジトリにはmypkgというパッケージがあります.
 
