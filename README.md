@@ -1,20 +1,52 @@
 # mypkgパッケージ
 ![test](https://github.com/SomaKobayashi/mypkg/actions/workflows/test.yml/badge.svg)
 
-このリポジトリにはmypkgというパッケージがあります.
+* mkpkgはROS2のパッケージです.
+
+* mypkgの中にtalker.py,listener.py,talk_listen.launch.pyという3つのコマンドがあります.
+
+## トピックの名前
+
+* /countup
+
+## コマンドの使用方法
+
+* talker.py
+```
+端末1
+ros2 run mypkg talker
+
+端末2
+ros2 topic echo /countup
+```
+数字をカウントし始める.
+
+* listener.py
+```
+端末1
+ros2 run mypkg talker
+
+端末2
+ros2 run mypkg listener
+```
+talker.pyがカウントした数字を受けとり、出力し始める.
+
+* talk_listen.launch.py
+```
+端末1
+ros2 launch mypkg talk_listen.launch.py
+```
+talkerがカウントした数字をlistenerが受け取り、その結果を出力する.
 
 ## 実行環境
 
-* WSL Ubuntu 22.04
+* Ubuntu 22.04.1 LTS
 
 ## 必要なソフトウェア
 
-* Python 3.7～3.10
+* Python (バージョン…3.10.6)
+* ROS (バージョン…ROS2)
 
-## トピックの名前・型
-
-* 名前　countup
-* 型　Query型
 
 ## ライセンス
 
