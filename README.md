@@ -3,7 +3,7 @@
 
 * mkpkgはROS2のパッケージです.
 
-* mypkgの中にtalker.py(パブリッシャを持つノード),listener.py(サブスクライバをもつノード),talk_listen.launch.py(2つのノードを一度に立ち上げるファイル)があります.
+* mypkgの中にtalker.py(パブリッシャを持つノード), listener.py(サブスクライバをもつノード), talk_listen.launch.py(2つのノードを一度に立ち上げるファイル)があります.
 
 ## トピックの名前
 
